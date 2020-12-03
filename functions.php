@@ -1,5 +1,5 @@
 <?php
-function cleanSalary(int $hardSalary, bool $isStudent = FALSE):int { // začátek těla funkce
+function cleanSalary(int $hardSalary, bool $isStudent = FALSE):int { 
     if($isStudent == TRUE) {
         $cleanSalary = $hardSalary;
     } else {
