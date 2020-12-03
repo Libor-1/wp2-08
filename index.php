@@ -39,7 +39,7 @@ $employees[9]['type'] = 'corona';
 
 <?php for ($i=0; $i < 10; $i++) { ?>
 
-<p>Hrubá mzda: <?= $employees[$i]['salary'], 'corona';?> </p>
+<p>Hrubá mzda: <?= $employees[$i]['salary'];?> </p>
 
 <p>Čistá mzda normal: <?= cleanSalaryComplex($employees[$i]['salary']);?> </p>
 
