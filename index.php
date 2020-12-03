@@ -36,10 +36,17 @@ $employees[9]['type'] = 'corona';
 ?>
 
 <h1>My salary from Bill Gátes</h1>
+
 <?php for ($i=0; $i < 10; $i++) { ?>
+
+<p>Hrubá mzda: <?= $employees[$i]['salary'], 'corona';?> </p>
+
 <p>Čistá mzda normal: <?= cleanSalaryComplex($employees[$i]['salary']);?> </p>
+
 <p>Čistá mzda student: <?= cleanSalaryComplex($employees[$i]['salary'], 'student');?> </p>
-<p>Čistá mzda normal během corony: <?= cleanSalaryComplex($employees[$i]['salary'], 'corona');?> </p> 
+
+<p>Čistá mzda normal během corony: <?= cleanSalaryComplex($employees[$i]['salary'], 'corona');?> </p>
+
 <?php } ?>
 
 </body>
